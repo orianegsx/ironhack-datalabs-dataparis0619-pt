@@ -1,0 +1,174 @@
+mysql> USE lab_mysql;
+
+mysql> SHOW TABLES;
+Empty set (0,02 sec)
+
+mysql> CREATE TABLE cars (vin INT);
+Query OK, 0 rows affected (0,23 sec)
+
+mysql> SHOW TABLES;
++---------------------+
+| Tables_in_lab_mysql |
++---------------------+
+| cars                |
++---------------------+
+1 row in set (0,01 sec)
+
+mysql> CREATE TABLE customers (customerid INT);
+Query OK, 0 rows affected (0,04 sec)
+
+mysql> CREATE TABLE invoices (invoicenumber INT);
+Query OK, 0 rows affected (0,04 sec)
+
+mysql> CREATE TABLE salespersons (staffid INT);
+Query OK, 0 rows affected (0,06 sec)
+
+mysql> SHOW TABLES;
++---------------------+
+| Tables_in_lab_mysql |
++---------------------+
+| cars                |
+| customers           |
+| invoices            |
+| salespersons        |
++---------------------+
+4 rows in set (0,01 sec)
+
+mysql> DESCRIBE cars;
++-------+---------+------+-----+---------+-------+
+| Field | Type    | Null | Key | Default | Extra |
++-------+---------+------+-----+---------+-------+
+| vin   | int(11) | YES  |     | NULL    |       |
++-------+---------+------+-----+---------+-------+
+1 row in set (0,03 sec)
+
+mysql> ALTER TABLE cars ADD COLUMN manufacturer VARCHAR(200);
+Query OK, 0 rows affected (0,08 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESCRIBE cars;
++--------------+--------------+------+-----+---------+-------+
+| Field        | Type         | Null | Key | Default | Extra |
++--------------+--------------+------+-----+---------+-------+
+| vin          | int(11)      | YES  |     | NULL    |       |
+| manufacturer | varchar(200) | YES  |     | NULL    |       |
++--------------+--------------+------+-----+---------+-------+
+2 rows in set (0,01 sec)
+
+mysql> ALTER TABLE cars ADD COLUMN model  VARCHAR(200);
+Query OK, 0 rows affected (0,03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE cars ADD COLUMN year DATE;
+Query OK, 0 rows affected (0,04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE cars ADD COLUMN color TEXT;
+Query OK, 0 rows affected (0,03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESCRIBE cars;
++--------------+--------------+------+-----+---------+-------+
+| Field        | Type         | Null | Key | Default | Extra |
++--------------+--------------+------+-----+---------+-------+
+| vin          | int(11)      | YES  |     | NULL    |       |
+| manufacturer | varchar(200) | YES  |     | NULL    |       |
+| model        | varchar(200) | YES  |     | NULL    |       |
+| year         | date         | YES  |     | NULL    |       |
+| color        | text         | YES  |     | NULL    |       |
++--------------+--------------+------+-----+---------+-------+
+5 rows in set (0,00 sec)
+
+mysql> ALTER TABLE customers ADD COLUMN name VARCHAR(200);
+Query OK, 0 rows affected (0,04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE customers ADD COLUMN phonenumber VARCHAR(200);
+Query OK, 0 rows affected (0,02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE customers ADD COLUMN email VARCHAR(200);
+Query OK, 0 rows affected (0,03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE customers ADD COLUMN address VARCHAR(200);
+Query OK, 0 rows affected (0,06 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE customers ADD COLUMN city VARCHAR(200);
+Query OK, 0 rows affected (0,02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE customers ADD COLUMN state VARCHAR(200);
+Query OK, 0 rows affected (0,01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE customers ADD COLUMN country VARCHAR(200);
+Query OK, 0 rows affected (0,05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE customers ADD COLUMN zipcode VARCHAR(200);
+Query OK, 0 rows affected (0,28 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESCRIBE customers;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| customerid  | int(11)      | YES  |     | NULL    |       |
+| name        | varchar(200) | YES  |     | NULL    |       |
+| phonenumber | varchar(200) | YES  |     | NULL    |       |
+| email       | varchar(200) | YES  |     | NULL    |       |
+| address     | varchar(200) | YES  |     | NULL    |       |
+| city        | varchar(200) | YES  |     | NULL    |       |
+| state       | varchar(200) | YES  |     | NULL    |       |
+| country     | varchar(200) | YES  |     | NULL    |       |
+| zipcode     | varchar(200) | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+9 rows in set (0,00 sec)
+
+mysql> ALTER TABLE salespersons ADD COLUMN name VARCHAR(200);
+Query OK, 0 rows affected (0,04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE salespersons ADD COLUMN store VARCHAR(200);
+Query OK, 0 rows affected (0,02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESCRIBE salespersons;
++---------+--------------+------+-----+---------+-------+
+| Field   | Type         | Null | Key | Default | Extra |
++---------+--------------+------+-----+---------+-------+
+| staffid | int(11)      | YES  |     | NULL    |       |
+| name    | varchar(200) | YES  |     | NULL    |       |
+| store   | varchar(200) | YES  |     | NULL    |       |
++---------+--------------+------+-----+---------+-------+
+3 rows in set (0,01 sec)
+
+mysql> ALTER TABLE invoices ADD COLUMN date DATE;
+Query OK, 0 rows affected (0,02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE invoices ADD COLUMN carid INT;
+Query OK, 0 rows affected (0,07 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE invoices ADD COLUMN customerid INT;
+Query OK, 0 rows affected (0,03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE invoices ADD COLUMN staffid INT;
+Query OK, 0 rows affected (0,02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESCRIBE invoices;
++---------------+---------+------+-----+---------+-------+
+| Field         | Type    | Null | Key | Default | Extra |
++---------------+---------+------+-----+---------+-------+
+| invoicenumber | int(11) | YES  |     | NULL    |       |
+| date          | date    | YES  |     | NULL    |       |
+| carid         | int(11) | YES  |     | NULL    |       |
+| customerid    | int(11) | YES  |     | NULL    |       |
+| staffid       | int(11) | YES  |     | NULL    |       |
++---------------+---------+------+-----+---------+-------+
+5 rows in set (0,01 sec)
