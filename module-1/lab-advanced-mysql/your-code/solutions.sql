@@ -2,9 +2,7 @@
 SELECT authors.au_id AS 'AUTHOR ID', titles.title_id AS 'TITLE ID', SUM(titles.price * sales.qty * titles.royalty / 100 * titleauthor.royaltyper / 100) AS 'PROFIT'
 FROM authors, sales, titleauthor, titles
 WHERE authors.au_id = titleauthor.au_id AND titleauthor.title_id = titles.title_id AND sales.title_id = titles.title_id
-GROUP BY authors.au_id, titles.title_id ;
-
-
+GROUP BY authors.au_id, titles.title_id 
 
 #Step2
 SELECT authors.au_id AS 'AUTHOR ID', titles.title_id AS 'TITLE ID', SUM(titles.price * sales.qty * titles.royalty / 100 * titleauthor.royaltyper / 100) AS 'PROFIT'
