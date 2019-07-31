@@ -3,23 +3,17 @@
 - Unzip it
 - Add the .csv on the folder "your_code"
 
-
 #STEP1: Import dataSet
 - import data as csv
 - read create df
 - rename columns
 
-
 #STEP2: Examining Data for Potential Issues
 - Missing values
 We will find if some columns have a lot of null value. If yes we will remove them
 
-
 - Incorrect values
 Define each colums and remove wrong value
-
-
-
 
 - Special characters
 We will analyse the set of each columns and correct data
