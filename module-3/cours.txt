@@ -1,0 +1,42 @@
+1/ Feature extraction / cleaning / solution ingeniering
+2/ Objectis ?
+Classification Accuracy nb de bonnes prediction/nb de prediction
+3/ Protocol experimental
+train set / test set /dev set
+4/ Cross validation
+
+
+ML workflow
+1/Data cleaning feature enginering feature selection
+2/ metrics / objectifs
+- accuracy, F1, precision, recall
+- RMSE, MSE, MAE
+3/ protocol experimental
+- train/dev/testt
+- cross validation
+4/ data cleaning
+- reperer les valeurs maquantes
+    - supprimer les observations
+    - supprimer la feature ou colonne
+    - inférer une valeur pour chaque val manquante (dangereux)
+- reperer les outliers et les traiter
+    - Si peu d'outliers/peu de données on peut les supprimer
+    - si beaucoup d'outliers/de data on peut les garder
+    
+    
+5/ Feature ingenering
+Injecter de la connaissance metier en créeant des nouvelles colnnes/variable/feature à partir de variable existance
+encerclage des variables
+- categorical
+- numeric
+- other
+
+6/ Feature selection
+- Fléau de la dimension
+- Overlifting
+
+PCA
+
+
+
+
