@@ -1,0 +1,22 @@
+Data preparation
+1/ Encodage des variables
+2/ Data cleaning
+ - outliers (optionnel
+ - missing values
+ 
+3/ Feature enginering
+ - Chercher d'autres datasets
+ - creation de nouvelles features
+ - transformation données numériques
+     - convave pour écarter des valeurs
+     - convexe pour les rapprocher
+     - standardisation, normalisation
+ 
+4/ Feature selection
+- fleaux de la dimension (si on a 20 column il nous faut 10^20 variables) PCA
+- Overliffting
+- intuition
+- correlation
+- elimination
+ 
+ 
