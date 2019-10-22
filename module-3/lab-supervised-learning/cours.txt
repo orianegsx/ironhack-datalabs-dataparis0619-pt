@@ -1,0 +1,15 @@
+Decision trees / Random forest
+
+Se trompe souvvent sur le test meme si il est tres bon sur le train
+gradien boosting X6 boost
+
+Naive bayes
+model probabilistique
+
+classification:
+C1,C2,....Cm classes
+
+X1,X2, ...Xp features
+
+Knearest neighbours
+
