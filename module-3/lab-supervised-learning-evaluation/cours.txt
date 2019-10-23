@@ -1,0 +1,56 @@
+K nearest neighbours:
++ facile a utiliser
++ interpretable
+- marche pas forcement très bien
+
+
+Decision tree
++ interpretable
++ simple
+- outliers
+
+Random forest
++ bien généraliser
+- calulatoire
+- peu interpretable
+
+
+Naive bayes
++ peu de data
++ interpretable
+- feature independante
+
+Regression:
+MSE >= 0
+RMSE >= 0
+mais pas de borne limite
+
+R2 >>>> 1
+
+MAE
+
+
+Classification:
+Accuracy = #bien prédit/ # total de prediction  si 1% de fraud et 0% predit alors =99%
+
+Balance accuracy
+moyenne des accuracy
+ne prends pas en compte le dé-équilibre des classes
+
+
+
+Faux positif / faux negatif
+Precision = TP / (TP + FP) lorsqu'on souaihte savoir combien de fois j'ai eu raison
+
+Recall = TP / (TP + FN) sur les personne malades, combien j'en ai detecté
+
+F1 = 2 * ( P*R / (P + R)) la moyenne 
+
+Courbe ROC
+
+
+
+
+
+
+
