@@ -1,0 +1,25 @@
+Unsupervised learning
+= Detecter la strucutre d'un jeu de données
+
+1/ Reduction de dimension
+- PCA
+
+
+2/ Clustering: detecter automatiquementune partitionnement du dataset potentiel
+- creation de personas
+- image de feuille d'arbre : segmentation en groupe
+Ex algo: gaussion micters Model (clustering + outliers)
+
+3/ Estimation de la densité de probabilité
+
+K-Means
+K=2 trouver si le point est plus proches du point 1 ou du point 2
+0 et 1 sont les centroides des densités
+inertie doit être la plus petites
+les clusters sont definis par 1 point : donc pas forcement bon sur des dataset qui sont impliquées entre elle
+
+DBScan
+Trouver des clusters: zone de l'espace ou il ya  une grande densité de point qui est entouré de zone a basse densité de points
+
+
+
