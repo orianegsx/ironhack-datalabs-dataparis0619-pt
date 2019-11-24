@@ -36,6 +36,79 @@ encerclage des variables
 - Overlifting
 
 PCA
+------------------------------------------------------------
+Standardisation
+retrancher la moyenne / ecart type
+utilisé dans 90% des cas
+StandardScaler
+
+Normalisation
+retranche par le min / ecart max - min
+
+MaxAbsScaler
+MinMaxScaler
+-------------------------------------------------------------
+Natural Language Processing (NLP)
+Texte Image Audio
+Comment representer le texte pour qu'il soit manipulable par le ML
+
+Bag of words
+Vesteur chaque mot est 0/1:
+0 je
+0 suis
+0 il
+1 nous
+tous les mots sont independant les uns des autres
+on perd le sens (terrible / pas terrible)
+
+Separer les paragraphe en liste de phrases: sentence tokenizer
+Ensuite tokeniser en mot: word tokenizer
+
+Les tokenizer savent comment spliter en fonction de la langue "j'a" : pas d'espace
+Count Vectorizer: transforme en vecteur le paragraphe
+Il faut diminuer la taille du vocabulaire avant le countVecctorizer(car trop de feature)
+- Supprimer les stop words car peu de valeur (prendre liste existante ou faire un count sur les mots pour les repérer)
+- Supprimer les mots trop peu frequents (car pas assez nombreux pour apprendre au model)
+- lowercser la totalité
+- Stemming : couper chaque mot pour garder le radical attention dangereux flight = fli / finir = fin
+- Lemmatisation: forme canonique du mot finira = finir / avait = avoir
+- Regex
+- TFIDF= Term frequency x Inverse doc Frequency = TF * log( #documents/#doc contenant le mot) : IfIdfVectorizer
+
+Representation dense
+base de donnée de vecteur deja existants
+Algo deja existant qu'on peut appliqué sur notre corpus
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
