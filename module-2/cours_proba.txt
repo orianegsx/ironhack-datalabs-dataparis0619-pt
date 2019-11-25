@@ -1,0 +1,35 @@
+Probabilité:
+
+1 experience
+100 Repetition de l'experience
+1 evenement mesurable
+
+# fini d'evenement = proba discrete (ex: lancer de dés)
+# infini = proba continue (ex: temperature)
+
+Proba discrete P("face 1") = 1/6
+
+Proba continu P("T=23,6") = 0 On ne parle jamais de la proba d'un evenement par contre: P(T € [23, 24])
+Densité de probabilité = l'air sous la courbe
+
+Loi Bernouilli
+Loi Binomiale
+Loi uniforme
+Loi gaussienne
+
+variance = ecart type 2
+
+La loi des grands nombres:
+La moyenne empirique converge vers la moyenne sous-jacente
+
+Théoreme Centrale Limite
+La moyenne sous-jacente suit une gaussienne de moyenne la moyenne empirique
+
+
+L'intervalle de confiance
+Standard scaler
+
+
+P-value
+
+

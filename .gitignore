@@ -2,3 +2,7 @@
 .idea
 venv/
 .ipynb_checkpoints
+final-project/columns.csv
+final-project/divorce-csv.csv
+final-project/responses.csv
+module-3/lab-nlp/Sentiment140.csv
